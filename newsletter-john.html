@@ -1,76 +1,139 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html, charset=UTF-8"/>
-<meta name="format-detection" content="telephone=no"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, IE=7, IE=EDGE" />
+    <meta http-equiv="Content-Type" content="text/html, charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, IE=7, IE=EDGE" />
 
     <title>Page title</title>
 
-    <style type="text/css"> 
-		
-		/*Hide the pre-header*/
-		.pre-header{display:none!important;font-size:1px;color:#ffffff;line-height:1px;}
-	
-		/* Resenting some attributes and fixing some issues */
-		#outlook a {padding: 0;}
-		body{width:100% !important; -webkit-text; size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;}
-		.readMsBody{width: 100%;}
-		.externalClass{width:100%;}
-		.backgroundTable{margin:0 auto; padding:0; width:100% !important;}
-		table td {border-collapse: collapse;}
-		.externalClass{line-height:115%}
-		/* End reset instructions */
-		
-		/* Tablet - medium screen media queries */
-        @media screen and (max-width: 630px) {
-			/* Stacking elements using display block for header links*/
-			*[class="mobile-column-link"]{display:block; width:100% !important; text-align: center; padding: 5px 0 !important; background-color:#f8f8f8; border-bottom: 1px solid #f0f0f0}
-			
-			/* Stacking elements using display block */
-			*[class="mobile-column"]{display:block;}
-			
-			/* Stacking elements using display block ad 100% wide */
-			*[class="mobile-column-alternative"]{display:inline !important; width: 100% !important; }
-			
-			/* More stacking elements to help us out */
-			*[class="mob-column"]{float: none !important; width:100% !important;}
-			
-			/* Used to hide things on mobile version */
-			*[class="hide"]{display: none !important;}
-			
-			/* This fixes the height issue by setting elements to 100% width */
-			*[class="100p"]{width: 100% !important; height: auto !important;}
-			
-			/* For the 2x2 stack - This is for when columns stack but need spacing underneath */
-			*[class="condensed"]{padding-bottom: 40px !important; display: block;}
-			
-			/* Forces to center align content on mobile */
-			*[class="center"]{text-align: center !important; width: 100% !important; height: auto !important;}
-			
-			/* 100percent width section with 20px padding */
-			*[class="100pad"]{width: 100% !important; padding: 20px;}
-			
-			/* 100percent width section with 20px padding left and right */
-            *[class="100padleftright20px"] {width:100% !important; padding:0 20px 0 20px;} 
-			
-			/* Section with 10px padding right */
-            *[class="pad10pxright"] {padding:0 10px 0 0;} 
-			
-			/* 100percent width section with 20px padding top and bottom */
-            *[class="100padtopbottom"] {width:100% !important; padding:20px 0 20px 0 !important;}
-			
-			/* 60percent width section with 20px padding top and bottom */
-            *[class="60padtopbottom"] {width:60% !important; padding:20px 0 20px 0 !important;}
-			
-			/*fixing margin*/
-			/* 100percent width section with 20px margin left and right */
-            *[class="100margleftright20px"] { margin-left:10px !important; margin-right:10px !important;} 
+    <style type="text/css">
+        /*Hide the pre-header*/
+        
+        .pre-header {
+            display: none!important;
+            font-size: 1px;
+            color: #ffffff;
+            line-height: 1px;
         }
-		/* End tablet - medium screen media queries */
+        /* Resenting some attributes and fixing some issues */
+        
+        #outlook a {
+            padding: 0;
+        }
+        
+        body {
+            width: 100% !important;
+            -webkit-text;
+            size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .readMsBody {
+            width: 100%;
+        }
+        
+        .externalClass {
+            width: 100%;
+        }
+        
+        .backgroundTable {
+            margin: 0 auto;
+            padding: 0;
+            width: 100% !important;
+        }
+        
+        table td {
+            border-collapse: collapse;
+        }
+        
+        .externalClass {
+            line-height: 115%
+        }
+        /* End reset instructions */
+        /* Tablet - medium screen media queries */
+        
+        @media screen and (max-width: 630px) {
+            /* Stacking elements using display block for header links*/
+            *[class="mobile-column-link"] {
+                display: block;
+                width: 100% !important;
+                text-align: center;
+                padding: 5px 0 !important;
+                background-color: #f8f8f8;
+                border-bottom: 1px solid #f0f0f0
+            }
+            /* Stacking elements using display block */
+            *[class="mobile-column"] {
+                display: block;
+            }
+            /* Stacking elements using display block ad 100% wide */
+            *[class="mobile-column-alternative"] {
+                display: inline !important;
+                width: 100% !important;
+            }
+            /* More stacking elements to help us out */
+            *[class="mob-column"] {
+                float: none !important;
+                width: 100% !important;
+            }
+            /* Used to hide things on mobile version */
+            *[class="hide"] {
+                display: none !important;
+            }
+            /* This fixes the height issue by setting elements to 100% width */
+            *[class="100p"] {
+                width: 100% !important;
+                height: auto !important;
+            }
+            /* For the 2x2 stack - This is for when columns stack but need spacing underneath */
+            *[class="condensed"] {
+                padding-bottom: 40px !important;
+                display: block;
+            }
+            /* Forces to center align content on mobile */
+            *[class="center"] {
+                text-align: center !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+            /* 100percent width section with 20px padding */
+            *[class="100pad"] {
+                width: 100% !important;
+                padding: 20px;
+            }
+            /* 100percent width section with 20px padding left and right */
+            *[class="100padleftright20px"] {
+                width: 100% !important;
+                padding: 0 20px 0 20px;
+            }
+            /* Section with 10px padding right */
+            *[class="pad10pxright"] {
+                padding: 0 10px 0 0;
+            }
+            /* 100percent width section with 20px padding top and bottom */
+            *[class="100padtopbottom"] {
+                width: 100% !important;
+                padding: 20px 0 20px 0 !important;
+            }
+            /* 60percent width section with 20px padding top and bottom */
+            *[class="60padtopbottom"] {
+                width: 60% !important;
+                padding: 20px 0 20px 0 !important;
+            }
+            /*fixing margin*/
+            /* 100percent width section with 20px margin left and right */
+            *[class="100margleftright20px"] {
+                margin-left: 10px !important;
+                margin-right: 10px !important;
+            }
+        }
+        /* End tablet - medium screen media queries */
     </style>
-
 
 </head>
 
@@ -118,7 +181,7 @@
                                                                         <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#ffffff" class="100p" style="max-width:625px; width:100%; text-align:center; border:0">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#ffffff" class="100pad" style="max-width:625px; width:100%; text-align:center; border:0">
+                                                                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#ffffff" class="100pad" style="max-width:625px; width:100%; text-align:center; border:0;">
                                                                                         <tr class="100p">
                                                                                             <td align="right" valign="top" style="text-transform:uppercase; width:35%; color:#202020; font-family:'Arial',sans-serif; font-size:15px; line-height:1.5; padding:0; margin: 2% 0;" class="mobile-column-link">
                                                                                                 <a href="#" style="text-decoration:none; color: #202020">
@@ -298,7 +361,7 @@
                                                                                                     </tr>
                                                                                                 </table>
                                                                                             </td>
-																							<td width="1.6%" style="width:1.6%;" class="hide"></td>
+                                                                                            <td width="1.6%" style="width:1.6%;" class="hide"></td>
                                                                                             <td align="left" valign="top" bgcolor="#ffffff" class="mobile-column">
                                                                                                 <table border="0" cellspacing="0" cellpadding="0" style="margin:0; padding: 0; max-width: 96.5%" class="60padtopbottom">
                                                                                                     <tr>
@@ -310,7 +373,7 @@
                                                                                                     </tr>
                                                                                                 </table>
                                                                                             </td>
-																							<td width="1%" style="width:1%;" class="hide"></td>
+                                                                                            <td width="1%" style="width:1%;" class="hide"></td>
                                                                                             <td align="left" valign="top" bgcolor="#ffffff" class="mobile-column">
                                                                                                 <table border="0" cellspacing="0" cellpadding="0" style="margin:0; padding: 0;" class="60padtopbottom">
                                                                                                     <tr>
@@ -563,18 +626,18 @@
                                                                                             <img src="https://raw.githubusercontent.com/johnnascimento/amaros-newsletter/master/images/new-programmer_29.jpg" alt="Pick up your fave image description" title="Pick up your fave image title" width="100%" style="width:100%;display:block;border:0">
                                                                                         </a>
                                                                                     </td>
-                                                                                    <td width="50%" align="center" valign="center" bgcolor="#7cb1c3" class="mobile-column-alternative" style="width:50%; max-width:100%; color: #f8f8f8; font-family:'Arial',sans-serif; font-size:13px; letter-spacing:1px; line-height:1.4; padding:0 5%; background-color: #7cb1c3;" class="100p">
+                                                                                    <td width="50%" align="center" valign="center" bgcolor="#7cb1c3" class="mobile-column-alternative" style="width:50%; max-width:100%; color: #f8f8f8; font-family:'Arial',sans-serif; font-size:13px; letter-spacing:1px; line-height:1.4; padding:0 5%; background-color: #7cb1c3;">
                                                                                         <p style="text-transform:uppercase;  font-size:17px; font-weight: bold; line-height:1.4; margin:30px 0px 0px 0px;padding:0;">
                                                                                             PICK YOUR FAVE
                                                                                         </p>
                                                                                         <p style="margin:0; padding: 0; font-size: 17px; line-height:1.4; padding: 0; margin-top: 20px;">
                                                                                             Selecionamos 18 vestidos mídi por até 200:
                                                                                         </p>
-																						<p style="margin:30px 0px 30px 0px;" class="100margleftright20px">
-																							<a href="#" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #f8f8f8; font-size: 17px; padding:15px 60px; border: 2px solid #f8f8f8;">
+                                                                                        <p style="margin:30px 0px 30px 0px;" class="100margleftright20px">
+                                                                                            <a href="#" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #f8f8f8; font-size: 17px; padding:15px 60px; border: 2px solid #f8f8f8;">
 																								VEJA MAIS
 																							</a>
-																						</p>
+                                                                                        </p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -589,7 +652,7 @@
                                                                         <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#d9a397" class="100p" style="max-width:625px; width:100%; text-align:center; border:0; background-color:#d9a397;">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td width="50%" align="center" valign="center" bgcolor="#d9a397" class="hide" style="width:50%; max-width:100%; color: #202020; font-family:'Arial',sans-serif; font-size:13px; letter-spacing:1px; line-height:1.4; padding:0 5%; background-color: #d9a397;" class="100p">
+                                                                                    <td width="50%" align="center" valign="center" bgcolor="#d9a397" class="hide" style="width:50%; max-width:100%; color: #202020; font-family:'Arial',sans-serif; font-size:13px; letter-spacing:1px; line-height:1.4; padding:0 5%; background-color: #d9a397;">
                                                                                         <p style="text-transform:uppercase;  font-size:17px; font-weight: bold; line-height:1.4; margin:30px 0px 0px 0px;padding:0;">
                                                                                             ALFAIATARIA
                                                                                             <br />DESCOLADA
@@ -597,31 +660,30 @@
                                                                                         <p style="margin:0; padding: 0; font-size: 17px; line-height:1.4; padding: 0; margin-top: 20px;">
                                                                                             Três maneiras de usar um look mais sério fora do escritório:
                                                                                         </p>
-																						<p style="margin:30px 0px 30px 0px;" class="100margleftright20px">
-																							<a href="#" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #202020; font-size: 17px; padding:15px 60px; border: 2px solid #202020;">
+                                                                                        <p style="margin:30px 0px 30px 0px;" class="100margleftright20px">
+                                                                                            <a href="#" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #202020; font-size: 17px; padding:15px 60px; border: 2px solid #202020;">
 																								VEJA MAIS
 																							</a>
-																						</p>
+                                                                                        </p>
                                                                                     </td>
-																					<td width="50%" align="center" valign="center" bgcolor="#d9a397" class="mobile-column-alternative" style="width:50%; max-width:100%;">
+                                                                                    <td width="50%" align="center" valign="center" bgcolor="#d9a397" class="mobile-column-alternative" style="width:50%; max-width:100%;">
                                                                                         <a href="#" target="_blank">
                                                                                             <img src="https://raw.githubusercontent.com/johnnascimento/amaros-newsletter/master/images/new-programmer_33.jpg" alt="Tailor's shop image description" title="Tailor's shop fave image title" width="100%" style="width:100%;display:block;border:0">
                                                                                         </a>
                                                                                     </td>
-																					<td width="50%" align="center" valign="center" bgcolor="#d9a397" class="mobile-column-alternative" style="width:50%; max-width:100%; color: #202020; font-family:'Arial',sans-serif; font-size:13px; letter-spacing:1px; line-height:1.4; padding:0 5%; background-color: #d9a397; display: none;" class="100p">
+                                                                                    <td width="50%" align="center" valign="center" bgcolor="#d9a397" class="mobile-column-alternative" style="width:50%; max-width:100%; color: #202020; font-family:'Arial',sans-serif; font-size:13px; letter-spacing:1px; line-height:1.4; padding:0 5%; background-color: #d9a397; display: none;">
                                                                                         <p style="text-transform:uppercase;  font-size:17px; font-weight: bold; line-height:1.4; margin:30px 0px 0px 0px;padding:0;">
                                                                                             ALFAIATARIA
                                                                                             <br />DESCOLADA
                                                                                         </p>
-                                                                                        </p>
                                                                                         <p style="margin:0; padding: 0; font-size: 17px; line-height:1.4; padding: 0; margin-top: 20px;">
                                                                                             Três maneiras de usar um look mais sério fora do escritório:
                                                                                         </p>
-																						<p style="margin:30px 0px 30px 0px;" class="100margleftright20px">
-																							<a href="#" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #202020; font-size: 17px; padding:15px 60px; border: 2px solid #202020;">
+                                                                                        <p style="margin:30px 0px 30px 0px;" class="100margleftright20px">
+                                                                                            <a href="#" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #202020; font-size: 17px; padding:15px 60px; border: 2px solid #202020;">
 																								VEJA MAIS
 																							</a>
-																						</p>
+                                                                                        </p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -652,7 +714,8 @@
                                                                                 <tr>
                                                                                     <td align="center" valign="top" style="color:#202020;font-family:'Arial',sans-serif;font-size:13px;letter-spacing:1px;line-height:1.6;padding:0 5%">
                                                                                         <p style="font-size:13px;margin:0;padding:0">
-                                                                                            You are receiving this newsletter because you have subscribed to<br /><b>AMARO</b> with the following e-mail: <a href="mailto:xpto@email.com" target="_blank">xpto@email.com</a>.
+                                                                                            You are receiving this newsletter because you have subscribed to
+                                                                                            <br /><b>AMARO</b> with the following e-mail: <a href="mailto:xpto@email.com" target="_blank">xpto@email.com</a>.
                                                                                         </p>
                                                                                     </td>
                                                                                 </tr>
@@ -702,4 +765,5 @@
         </tbody>
     </table>
 </body>
+
 </html>
