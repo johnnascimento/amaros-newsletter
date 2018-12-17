@@ -1,63 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html, charset=UTF-8" />
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, IE=7, IE=EDGE" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 
     <title>Page title</title>
 
     <style type="text/css">
         /*Hide the pre-header*/
-        
         .pre-header {
             display: none!important;
             font-size: 1px;
             color: #ffffff;
             line-height: 1px;
         }
+		
         /* Resenting some attributes and fixing some issues */
-        
-        #outlook a {
-            padding: 0;
-        }
-        
-        body {
-            width: 100% !important;
-            -webkit-text;
-            size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .readMsBody {
-            width: 100%;
-        }
-        
-        .externalClass {
-            width: 100%;
-        }
-        
-        .backgroundTable {
-            margin: 0 auto;
-            padding: 0;
-            width: 100% !important;
-        }
-        
-        table td {
-            border-collapse: collapse;
-        }
-        
-        .externalClass {
-            line-height: 115%
-        }
+		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
         /* End reset instructions */
+		
         /* Tablet - medium screen media queries */
         
-        @media screen and (max-width: 630px) {
+        @media screen and (max-width: 620px) {
             /* Stacking elements using display block for header links*/
             *[class="mobile-column-link"] {
                 display: block;
@@ -133,6 +105,19 @@
             }
         }
         /* End tablet - medium screen media queries */
+		
+	<!--[if gte mso 9]>
+	<style>
+		/* Target Outlook 2007 and 2010 */
+		table[class="wrappingfix"]{
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		div[class="pre-header"]{display:none;}
+	</style>
+	<![endif]-->
+	
     </style>
 
 </head>
@@ -145,12 +130,17 @@
             <tr>
                 <td>
                     <center>
-                        <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#ffffff" class="100p" style="max-width:625px; width:100%; text-align:left; margin:auto; border:0">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#ffffff" class="wrappingfix" style="max-width:625px; width:100%; text-align:left; margin:auto; border:0">
                             <tbody>
                                 <tr>
                                     <td align="center" valign="top">
-                                        <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#ffffff" class="100p center" style="max-width:625px; width:100%; text-align:center; margin:auto; border:0">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#ffffff" class="100p" style="max-width:625px; width:100%; text-align:center; margin:auto; border:0">
                                             <tbody>
+												<!--[if mso]>
+												   <center>
+												   <tr><td>
+												   <table border="0" cellpadding="0" cellspacing="0" width="625" bgcolor="#ffffff">
+												<![endif]-->
                                                 <tr>
                                                     <td align="center" valign="top">
                                                         <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" valign="top" bgcolor="#ffffff" class="100p" style="max-width:625px; width:100%; text-align:center; border:0">
@@ -165,7 +155,7 @@
                                                                                 <tr>
                                                                                     <td align="center" valign="center" bgcolor="#ffffff">
                                                                                         <a href="#" style="text-decoration:none; color:#202020" target="_blank">
-                                                                                            <img src="https://raw.githubusercontent.com/johnnascimento/amaros-newsletter/master/images/amaros-logo.png" alt="Logo da Amaro" title="Logo title" width="160px" style="max-width:160px; width:100%; display:block; border:0">
+                                                                                            <img src="https://raw.githubusercontent.com/johnnascimento/amaros-newsletter/master/images/amaros-logo.png" alt="Logo da Amaro" title="Logo title" width="25.6%" style="max-width:25.6%; width:25.6%%; display:block; border:0">
                                                                                         </a>
                                                                                     </td>
                                                                                 </tr>
@@ -344,7 +334,7 @@
                                                                                 <td valign="top" align="center">
                                                                                     <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
                                                                                         <tr>
-                                                                                            <td align="left" valign="top" bgcolor="#ffffff" class="mobile-column">
+                                                                                            <td align="center" valign="top" bgcolor="#ffffff" class="mobile-column">
                                                                                                 <table border="0" cellspacing="0" cellpadding="0" style="margin:0; padding: 0;" class="60padtopbottom">
                                                                                                     <tr>
                                                                                                         <td width="18.72%" align="center" style="width:18.72%;">
@@ -362,7 +352,7 @@
                                                                                                 </table>
                                                                                             </td>
                                                                                             <td width="1.6%" style="width:1.6%;" class="hide"></td>
-                                                                                            <td align="left" valign="top" bgcolor="#ffffff" class="mobile-column">
+                                                                                            <td align="center" valign="top" bgcolor="#ffffff" class="mobile-column">
                                                                                                 <table border="0" cellspacing="0" cellpadding="0" style="margin:0; padding: 0; max-width: 96.5%" class="60padtopbottom">
                                                                                                     <tr>
                                                                                                         <td width="18.72%" align="center" style="width:18.72%; padding: 0;">
@@ -374,7 +364,7 @@
                                                                                                 </table>
                                                                                             </td>
                                                                                             <td width="1%" style="width:1%;" class="hide"></td>
-                                                                                            <td align="left" valign="top" bgcolor="#ffffff" class="mobile-column">
+                                                                                            <td align="center" valign="top" bgcolor="#ffffff" class="mobile-column">
                                                                                                 <table border="0" cellspacing="0" cellpadding="0" style="margin:0; padding: 0;" class="60padtopbottom">
                                                                                                     <tr>
                                                                                                         <td width="18.72%" align="center" style="width:18.72%;">
@@ -753,6 +743,11 @@
                                                         </table>
                                                     </td>
                                                 </tr>
+												<!--[if mso]>
+												   </tr></td>
+												   </table>
+												   </center>
+												<![endif]-->
                                             </tbody>
                                         </table>
                                     </td>
